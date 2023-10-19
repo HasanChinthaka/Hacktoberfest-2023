@@ -67,7 +67,7 @@ li{
 /* Navbar Section */
 .navbar {
     width: 80%;
-    background-color: #007BFF;
+    background-color: #007bff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -95,6 +95,7 @@ li{
 .navbar-list-item {
     font-size: 18px;
     padding: 10px 20px;
+    margin-top: 10px;
     cursor: pointer;
     color: #fff;  
     transition: all 0.5s; /* Add transition to all effects to links  */
@@ -123,21 +124,22 @@ li{
     color: inherit;
 } */
 
-.navbar-list-item:hover a{
+.navbar-list-item:hover {
     font-weight: bold; /* Change link weight to bold because the orange was not visible enough */
+   
 }
 
 /* Hamburger menu icon */
 .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     cursor: pointer;
 }
 
 
 /* Media query for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .menu-toggle {
         display: block;
     }
@@ -158,9 +160,10 @@ li{
 /* Body Section */
 
 .code-img img {
-    width: 13rem;
-    height: 13rem;
+    width: 22rem;
+    height: 22rem;
     margin: 0 auto;
+    padding: auto;
 }
 
 .container-1{
@@ -179,7 +182,12 @@ li{
     font-size: 120px;
     text-align: center;
     margin: 0 auto 0px auto;
-    max-width: 600px;
+    max-width: 700px;
+}
+
+.auto-type
+{
+    color: #007bff;
 }
 
 .explore-btn{
@@ -195,7 +203,7 @@ li{
 }
 
 .explore-btn:hover {
-    width: 320px;
+    box-shadow: #333 4px 4px 8px;
 }
 
 
@@ -208,6 +216,7 @@ li{
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
+    padding: 10px;
 }
 
 #contri {
@@ -501,8 +510,6 @@ a{
 }
 
 
-
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 .contact-form {
   margin-top: 30px;
@@ -655,8 +662,9 @@ h1 small {
 }
 
 #btn4:hover{
-    background-color: wheat;
+    background-color: #74b6ec;
     color: #007BFF;
+    box-shadow: #333 4px 4px 8px;
 }
 
 .loader

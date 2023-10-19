@@ -1,7 +1,7 @@
 footer {
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding-top: 50px;
     color: white;
     background: linear-gradient(to right, #0074E4, #00A1E9);
     margin-top: auto;
@@ -29,7 +29,8 @@ footer .f-ele1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    padding: auto;
 }
 
 .f-ele2 ul {
@@ -60,8 +61,8 @@ footer .f-ele1 {
 .f-ele2 ul a li:hover {
     border-radius: 10px;
     background: white;
-
     color: black;
+    text-align: center;
 }
 
 .f-ele3 {
@@ -94,9 +95,14 @@ footer .f-ele1 {
 }
 
 .additional p {
-    line-height: 25px;
+    line-height: 15px;
 }
 
+.media1 img:hover
+{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
 
 /* End footer */
 /* Footer media queries */
@@ -126,7 +132,7 @@ footer .f-ele1 {
 @media (max-width:1095px) {
     footer {
         flex-direction: column;
-        gap: 32px;
+        gap: 16px;
     }
 
     .f-ele3 {
